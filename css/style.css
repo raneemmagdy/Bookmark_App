@@ -1,0 +1,90 @@
+h1{
+    font-family: 'Pacifico', cursive;
+}
+h1 {
+    text-align: center;
+    position: relative;
+    font-size:50px
+  }
+  p{
+    font-family: 'Righteous', sans-serif;
+    font-weight:500;
+  }
+ body{
+    background-color: #F7ECDE;
+ } 
+  h1::after {
+    content: "";
+    display: block;
+    width: 25%;
+    height: 20px; 
+    background-color: #FEC260;
+    position: absolute;
+    bottom: -10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    transition: height 0.3s; 
+    z-index: -1; 
+  }
+  
+  h1:hover::after {
+    height: 100%; 
+  }
+
+  .sec p, .sec i {
+    text-align: center;
+    font-size:25px;
+    background: linear-gradient(to right, #41A65C, #B2AB49);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+#btn{
+    background-color: #BB4120;
+}
+.dotted-line {
+    border: none;
+    border-top: 2px dotted #000; 
+    height: 1px;
+    margin: 20px 0; 
+  }
+
+  .custom-bg-color {
+    background-color: #8A9E23;
+    color: white;
+  }
+  .no-hover {
+    background-color: #8A9E23 !important; 
+    color: #fff !important; 
+    
+  }
+  .no-hover:hover {
+    background-color: #6b7a1a !important; 
+    border-color: #5a6420 !important; 
+  }
+
+
+  .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.red {
+    background-color: #F15F5D;
+}
+
+.yellow {
+    background-color: #FEBE2E;
+}
+
+.green {
+    background-color: #4DB748;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+}
