@@ -1,90 +1,81 @@
-h1{
-    font-family: 'Pacifico', cursive;
+body {
+  font-family: "Roboto Slab", system-ui;
+  background-color: #ffe5d9;
 }
 h1 {
-    text-align: center;
-    position: relative;
-    font-size:50px
-  }
-  p{
-    font-family: 'Righteous', sans-serif;
-    font-weight:500;
-  }
- body{
-    background-color: #F7ECDE;
- } 
-  h1::after {
-    content: "";
-    display: block;
-    width: 25%;
-    height: 20px; 
-    background-color: #FEC260;
-    position: absolute;
-    bottom: -10px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    transition: height 0.3s; 
-    z-index: -1; 
-  }
-  
-  h1:hover::after {
-    height: 100%; 
-  }
-
-  .sec p, .sec i {
-    text-align: center;
-    font-size:25px;
-    background: linear-gradient(to right, #41A65C, #B2AB49);
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  position: relative;
+  font-size: 50px;
 }
-#btn{
-    background-color: #BB4120;
+p {
+  font-family: "Righteous", sans-serif;
+  font-weight: 500;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 10px;
+  background-color: #fe6d73;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: height 0.3s;
+  z-index: -1;
+}
+
+h1:hover::after {
+  height: 100%;
+}
+
+.sec p,
+.sec i {
+  text-align: center;
+  font-size: 25px;
+  background: linear-gradient(to right, #bc00dd, #ff0a54);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+#btn {
+  background-color: #fe6d73;
+  transition: all 1s ease;
+}
+#btn:hover {
+  color: #000;
+  background-color: #6f2dbd;
 }
 .dotted-line {
-    border: none;
-    border-top: 2px dotted #000; 
-    height: 1px;
-    margin: 20px 0; 
-  }
+  border: none;
+  border-top: 2px dotted #000;
+  height: 1px;
+  margin: 20px 0;
+}
 
-  .custom-bg-color {
-    background-color: #8A9E23;
-    color: white;
-  }
-  .no-hover {
-    background-color: #8A9E23 !important; 
-    color: #fff !important; 
-    
-  }
-  .no-hover:hover {
-    background-color: #6b7a1a !important; 
-    border-color: #5a6420 !important; 
-  }
-
-
-  .dot {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 5px;
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .red {
-    background-color: #F15F5D;
+  background-color: #f15f5d;
 }
 
 .yellow {
-    background-color: #FEBE2E;
+  background-color: #febe2e;
 }
 
 .green {
-    background-color: #4DB748;
+  background-color: #4db748;
 }
 
 .modal-header {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
